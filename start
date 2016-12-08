@@ -1,0 +1,7 @@
+#!/bin/sh
+
+while :; do
+  curl -s "$URI" > /dev/null
+  echo "$(date): ping $URI"
+  sleep $DELAY
+done
